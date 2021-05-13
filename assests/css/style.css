@@ -1,3 +1,8 @@
+* {
+box-sizing: border-box;
+}
+
+
 :root {
 --main: x(color);
 --section: x(color);
@@ -12,14 +17,25 @@ body {
  height: 700px;
 }
 
+main {
+ float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
 header {
- float: center;
- display: block;
- text-align: left;
- margin: 0px;
- 
  border: 2px solid rgb(255, 0, 13);
  border-style: dotted;
+}
+
+h1 { 
+ position: sticky;
+ text-align: center;
+ border: 2px solid rgb(255, 0, 13);
+ border-style: dotted;
+ padding: 14px;
+ float: auto;
+ margin: 0px;
 }
 
 .navbar {
@@ -36,16 +52,64 @@ header {
  padding: 20px 20px;
  float: right;
  display: block;
- text-align: center;
+ text-align: auto;
  font-size: 20px;
+ box-sizing: border-box;
 }
 
 .navbar a:hover {
  background-color: black;
 }
 
+
 section {
  border: 2px solid rgb(0, 255, 64);
  border-style: dotted;
+ box-sizing: border-box;
 }
 
+.bio {
+border: 2px solid rgb(0, 225, 255);
+ border-style: dotted;
+ box-sizing: border-box;
+ float: left;
+ margin-top: 50px;
+ flex-wrap: wrap;
+}
+
+body {
+margin: 40px;
+background-blend-mode: soft-light;
+background-color: rgb(44, 44, 44);
+}
+
+section img {
+ border: 2px solid rgb(0, 255, 64);
+ border-style: dotted;
+ width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+.bio p {
+ float: right;
+ flex-wrap: wrap;
+ 
+}
+
+h2 {
+ margin: 0;
+ padding: 0px;
+ float: center;
+}
+
+.banner {
+background-image: url("../images/backround.jpg");
+min-height: 200px;
+background-position: auto;
+background-size: cover;
+}
+
+aside img {
+ position: relative;
+float: right;
+}
