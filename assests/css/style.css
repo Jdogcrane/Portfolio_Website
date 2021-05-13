@@ -50,17 +50,19 @@ body {
 }
 
 .portrait img {
- border: 2px solid rgb(235, 118, 8);
+ border: 2px solid rgb(0, 0, 0);
  border-style: double;
  height: auto;
  max-width: 300px;
  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.61);
+ border-radius: 8px;
 }
 
 h2 {
  margin-top: 10px;
  padding: 0px;
  float: center;
+ text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
 .banner {
@@ -68,25 +70,36 @@ h2 {
  min-height: 200px;
  background-position: auto;
  background-size: cover;
+ box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.61);
+ border-radius: 20px;
 }
 
 .projects img {
  float: center;
  flex: auto;
  height: auto;
- width: 600px;
+ width: 100%;
+ max-width: 600px;
  padding: 10px;
  margin: 0px;
- box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.61);
- margin: 0px
+ box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.61);
+ margin: 0px;
+ border-radius: 8px;
+ border:rgb(0, 0, 0)
 }
 
 iframe {
  align-self: center;
+ position: relative;
  margin: 0px;
- width: 600px;
- height: 280px;
+ height: 390px;
+ width: min-content;
  padding: 0px;
  border: 10px;
- box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.61);
+ box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.61);
+ border-radius: 8px;
+}
+
+p {
+ text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.829);
 }
