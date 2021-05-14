@@ -91,4 +91,4 @@ CSS Additions
 >Notes: some of my code was a little sloppy, might have some redundancies, but I didn't mind since the projects goal was not focused on making my code look good.
 
 # Site Preview
-![image_url](https://cdn.discordapp.com/attachments/709148993262977068/842585534051385344/GuYlOJHwbr.gif "Site preview")
+![alt link= https://cdn.discordapp.com/attachments/709148993262977068/842585534051385344/GuYlOJHwbr.gif](assests/images/site.gif)
