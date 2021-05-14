@@ -14,19 +14,19 @@
  <header class="banner">
   <section class="navbar">
    <a href="#">HOME</a>
-   <a href="#">INFO</a>
-   <a href="#">MY WORK</a>
-   <a href="#">CONTACT ME</a>
+   <a href="#about">INFO</a>
+   <a href="#projects">RECENT PROJECTS</a>
+   <a href="#contact">CONTACT ME</a>
    </nav>
  </header>
 
  <!-- Banner -->
- 
+
  <!-- BIO -->
- <div class="rows">
+ 
   <section class="portrait">
    <img src="assests/images/mylogo.png">
-   <h2>ABOUT ME</h2>
+   <h2 id="about">ABOUT ME</h2>
    <p>
     My name is Joshua Crane</li>
     Im 22</li>
@@ -34,17 +34,28 @@
     Most of my hobbies involve some type of tech.</li>
     Currently learning JavaScript</li>
    </p>
- </div>
+ 
  </section>
  <section class="descriptions">
-<p>YOYOYOOY</p>
- </section>
- <section class="projects">
-  <img src="assests/images/projects.png">
-  <iframe src="https://open.spotify.com/embed/playlist/6XLYjJaLY1wV5BZjqMHNsz" allowtransparency="true"></iframe>
-  <img src="assests/images/activity.png">
+  <label class="repo">Recent Projects</label>
+  <label class="spotify">My Study Music</label>
+  <label class="activity">My activitys</label>
  </section>
  
+ <section class="projects">
+  <img id="projects" src="assests/images/projects.png">
+  <iframe id="spotify" src="https://open.spotify.com/embed/playlist/6XLYjJaLY1wV5BZjqMHNsz"
+   allowtransparency="true"></iframe>
+  <img id="activity" src="assests/images/activity.png">
+ </section>
+
+ <footer id="footer">
+  <a href="tel:+17043693265">704-369-3265</a>
+  <a href="mailto:Jdogcrane@gmail.com">Email</a>
+  <a href="https://github.com/Jdogcrane">GitHub</a>
+  <a href="https://open.spotify.com/user/jdogcrane">Spotify</a>
+ </footer>
+
 </body>
 
 </html>
