@@ -33,14 +33,12 @@ body {
  background-color: #fff;
  transition: 300ms;
 }
-
+/* image of me with curved edges and shadow*/
 .portrait img {
  margin-top: 20px;
- border: 2px solid rgb(0, 0, 0);
- border-style: double;
  height: auto;
  max-width: 300px;
- box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.61);
+ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
  border-radius: 8px;
 }
 
@@ -48,7 +46,7 @@ h2 {
  margin-top: 10px;
  padding: 0px;
  float: center;
- text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.61);
+ text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
 .banner {
@@ -56,7 +54,7 @@ h2 {
  min-height: 200px;
  background-position: auto;
  background-size: cover;
- box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.61);
+ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
  border-radius: 20px;
 }
 
@@ -68,10 +66,11 @@ h2 {
  max-width: 600px;
  padding: 10px;
  margin: 0px;
- box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.61);
+ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
  margin: 0px;
  border-radius: 8px;
- border: rgb(0, 0, 0)
+ border: rgb(0, 0, 0);
+ cursor: pointer;
 }
 
 .projects img:hover {
@@ -84,60 +83,57 @@ iframe {
  position: relative;
  margin: 10px;
  height: 390px;
- width: min-content;
  padding: 10px;
- border: 10px;
- box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.61);
- border-radius: 8px;
+ border: none
 }
 
 p {
- text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.829);
+ text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
 .repo {
  float: left;
  margin-left: 400px;
  font-weight: bolder;
- text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.829);
+ text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
 .spotify {
  float: center;
  font-weight: bolder;
- text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.829);
+ text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
 .activity {
  font-weight: bolder;
  float: right;
  margin-right: 400px;
- text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.829);
+ text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
 footer {
  margin: 20px;
 }
-
+/* removes dots from list */
 li {
  list-style: none
 }
- 
-section li { 
- text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.829);
-}
-
-footer a {
+/* address anchor settings for style */
+address a {
  text-decoration: none;
  color: black;
  border: double black;
  border-radius: 20px;
  padding: 5px;
+ margin-top: 20px;
+ margin-bottom: 20px;
 }
-
-footer a:hover {
+/* adds hover state to contact info */
+address a:hover {
  background-color: rgba(66, 66, 66, 0.192);
 }
+
+/* when screen gets small hide labels */
 
 @media screen and (max-width: 1500px) {
  .activity, .spotify, .repo {
@@ -149,5 +145,6 @@ button  {
  max-width: 100px;
  background: rgb(75, 75, 75);
  margin-bottom: 20px;
- box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.829);
+ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
+ color: white;
 }
