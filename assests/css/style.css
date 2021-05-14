@@ -1,27 +1,16 @@
-* {
- box-sizing: border-box;
-}
 
-:root {
- --main: x(color);
- --section: x(color);
- --dark: x(color);
- --light: x(color);
-}
-
+/* Body & Font */
 body {
- margin: 0;
- background-image: gradient(rgb(175, 173, 173), rgb(63, 53, 53));
  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+/* Navigation and Transparency for styling reasons */
 .navbar {
  background: transparent;
  height: 300px;
  width: auto;
  float: center;
 }
-
+/* Nav bar anchor font and color */
 .navbar a {
  color: black;
  text-decoration: none;
@@ -31,27 +20,32 @@ body {
  font-size: 20px;
  box-sizing: border-box;
 }
-
+/* nav bar hovor state */
 .navbar a:hover {
  background-color: rgba(48, 34, 17, 0.308);
 }
-
-
+/* Body text alignment & back */
 body {
  text-align: center;
  margin: 40px;
  background-blend-mode: soft-light;
- background-color: rgb(44, 44, 44);
  scroll-behavior: smooth;
+ background-color: #fff;
+ transition: 300ms;
 }
 
 .portrait img {
+ margin-top: 20px;
  border: 2px solid rgb(0, 0, 0);
  border-style: double;
  height: auto;
  max-width: 300px;
  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.61);
  border-radius: 8px;
+}
+
+.portrait img:hover {
+ transform: scale(1.3);
 }
 
 h2 {
@@ -81,12 +75,12 @@ h2 {
  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.61);
  margin: 0px;
  border-radius: 8px;
- border:rgb(0, 0, 0)
+ border: rgb(0, 0, 0)
 }
 
 .projects img:hover {
-transform: scale(1.2);
-transition: 300ms;
+ transform: scale(1.2);
+ transition: 300ms;
 }
 
 iframe {
@@ -128,14 +122,36 @@ p {
 footer {
  margin: 20px;
 }
+
+li {
+ list-style: none
+}
+ 
+section li { 
+ text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.829);
+}
+
 footer a {
-text-decoration: none;
-color: black;
-border: double black;
-border-radius: 20px;
-padding: 5px;
+ text-decoration: none;
+ color: black;
+ border: double black;
+ border-radius: 20px;
+ padding: 5px;
 }
 
 footer a:hover {
  background-color: rgba(66, 66, 66, 0.192);
-} 
+}
+
+@media screen and (max-width: 1500px) {
+ .activity, .spotify, .repo {
+  visibility: hidden;
+ }
+}
+
+button {
+ float: center;
+ max-width: 100px;
+ background: transparent;
+ margin-bottom: 20px;
+}
