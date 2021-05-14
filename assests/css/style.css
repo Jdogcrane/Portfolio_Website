@@ -137,17 +137,17 @@ p {
  text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
+/* removes dots from list */
+
+li {
+ list-style: none
+}
 /* adds some space for footer */
 
 footer {
  margin: 20px;
 }
 
-/* removes dots from list */
-
-li {
- list-style: none
-}
 
 /* address anchor settings for style */
 
