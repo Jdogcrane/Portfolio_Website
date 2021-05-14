@@ -1,16 +1,20 @@
-
 /* Body & Font */
+
 body {
  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 /* Navigation and Transparency for styling reasons */
+
 .navbar {
  background: transparent;
  height: 300px;
  width: auto;
  float: center;
 }
+
 /* Nav bar anchor font and color */
+
 .navbar a {
  color: black;
  text-decoration: none;
@@ -20,20 +24,26 @@ body {
  font-size: 20px;
  box-sizing: border-box;
 }
+
 /* nav bar hovor state */
+
 .navbar a:hover {
  background-color: rgba(48, 34, 17, 0.308);
 }
+
 /* Body text alignment & back */
+
 body {
  text-align: center;
  margin: 40px;
  background-blend-mode: soft-light;
  scroll-behavior: smooth;
  background-color: #fff;
- transition: 300ms;
+ transition: 500ms;
 }
+
 /* image of me with curved edges and shadow*/
+
 .portrait img {
  margin-top: 20px;
  height: auto;
@@ -42,12 +52,16 @@ body {
  border-radius: 8px;
 }
 
+/* look of h2 element */
+
 h2 {
  margin-top: 10px;
  padding: 0px;
  float: center;
  text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
+
+/* settings for look and positioning of banner */
 
 .banner {
  background-image: url("../images/backround.jpg");
@@ -57,6 +71,8 @@ h2 {
  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
  border-radius: 20px;
 }
+
+/* settings for look of projects & activitys */
 
 .projects img {
  float: center;
@@ -73,10 +89,14 @@ h2 {
  cursor: pointer;
 }
 
+/* adds zoom to hover state */
+
 .projects img:hover {
- transform: scale(1.2);
- transition: 300ms;
+ transform: scale(1.1);
+ transition: 400ms;
 }
+
+/* settings for spotify embed */
 
 iframe {
  align-self: center;
@@ -91,6 +111,8 @@ p {
  text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
+/* helps with position of repo label */
+
 .repo {
  float: left;
  margin-left: 400px;
@@ -98,11 +120,15 @@ p {
  text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
+/* helps with position of spotify label */
+
 .spotify {
  float: center;
  font-weight: bolder;
  text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
+
+/* helps with position of activity label */
 
 .activity {
  font-weight: bolder;
@@ -111,14 +137,20 @@ p {
  text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
+/* adds some space for footer */
+
 footer {
  margin: 20px;
 }
+
 /* removes dots from list */
+
 li {
  list-style: none
 }
+
 /* address anchor settings for style */
+
 address a {
  text-decoration: none;
  color: black;
@@ -128,7 +160,9 @@ address a {
  margin-top: 20px;
  margin-bottom: 20px;
 }
+
 /* adds hover state to contact info */
+
 address a:hover {
  background-color: rgba(66, 66, 66, 0.192);
 }
@@ -141,7 +175,9 @@ address a:hover {
  }
 }
 
-button  {
+/* button size and look */
+
+button {
  max-width: 100px;
  background: rgb(75, 75, 75);
  margin-bottom: 20px;
