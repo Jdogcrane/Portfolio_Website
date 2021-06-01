@@ -6,6 +6,11 @@ body {
 
 /* Navigation and Transparency for styling reasons */
 
+img {
+    width: auto;
+    height: auto;
+  }
+
 .navbar {
  background: transparent;
  height: 300px;
@@ -40,6 +45,7 @@ body {
  scroll-behavior: smooth;
  background-color: #fff;
  transition: 500ms;
+ color: black;
 }
 
 /* image of me with curved edges and shadow*/
@@ -52,10 +58,12 @@ body {
  border-radius: 8px;
 }
 
+
+
 /* look of h2 element */
 
 h2 {
- margin-top: 10px;
+ margin-top: 0px;
  padding: 0px;
  float: center;
  text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
@@ -66,6 +74,7 @@ h2 {
 .banner {
  background-image: url("../images/backround.jpg");
  min-height: 200px;
+ height: auto;
  background-position: auto;
  background-size: cover;
  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
@@ -81,12 +90,22 @@ h2 {
  width: 100%;
  max-width: 600px;
  padding: 10px;
- margin: 0px;
  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
  margin: 0px;
  border-radius: 8px;
  border: rgb(0, 0, 0);
  cursor: pointer;
+}
+
+.portrait a {
+    text-decoration: none;
+    color: black;
+    border: double black;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-around;
 }
 
 /* adds zoom to hover state */
@@ -96,46 +115,10 @@ h2 {
  transition: 400ms;
 }
 
-/* settings for spotify embed */
-
-iframe {
- align-self: center;
- position: relative;
- margin: 10px;
- height: 390px;
- padding: 10px;
- border: none
-}
-
 p {
  text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
 }
 
-/* helps with position of repo label */
-
-.repo {
- float: left;
- margin-left: 400px;
- font-weight: bolder;
- text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
-}
-
-/* helps with position of spotify label */
-
-.spotify {
- float: center;
- font-weight: bolder;
- text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
-}
-
-/* helps with position of activity label */
-
-.activity {
- font-weight: bolder;
- float: right;
- margin-right: 400px;
- text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
-}
 
 /* removes dots from list */
 
@@ -150,6 +133,28 @@ footer {
 
 
 /* address anchor settings for style */
+address {
+margin: 20px;
+}
+
+.descriptions {
+    margin: 20px;
+    justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.descriptions a {
+    text-decoration: none;
+    color: black;
+    border: solid black;
+    border-radius: 20px;
+    margin: 170px;
+    max-width: auto;
+    max-height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
 
 address a {
  text-decoration: none;
@@ -160,6 +165,7 @@ address a {
  margin-top: 20px;
  margin-bottom: 20px;
 }
+
 
 /* adds hover state to contact info */
 
@@ -183,4 +189,5 @@ button {
  margin-bottom: 20px;
  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
  color: white;
+ border-radius: 20px;
 }

@@ -2,66 +2,69 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="assests/css/style.css" />
- <title>Portfolio & More</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assests/css/style.css" />
+  <title>Portfolio & More</title>
 </head>
 
 <body>
 
- <!-- navigation and header title -->
+  <!-- navigation and header title -->
+  <header>
+    <section class="navbar banner">
+      <h2>Joshua Crane</h2>
+      <a href="#">HOME</a>
+      <a href="#about">INFO</a>
+      <a href="#projects">RECENT PROJECTS</a>
+      <a href="#contact">CONTACT ME</a>
+      <a href="./assests/resume/resume.pdf" target="_blank">My Resume</a>
+    </nav>
+  </header>
+  
+  <!-- portrait & buttons  -->
+  
+  <section class="portrait">
+    <button onclick="document.body.style.backgroundColor = 'rgb(44, 44, 44)', document.body.style.color = '#ffff';"> Dark</button>
+    <img src="assests/images/mylogo.png">
+    <button onclick="document.body.style.backgroundColor = '#ffff', document.body.style.color = 'black';"> Light</button>
+    <h2 id="about">bio</h2>
 
- <header class="banner">
-  <section class="navbar">
-   <a href="#">HOME</a>
-   <a href="#about">INFO</a>
-   <a href="#projects">RECENT PROJECTS</a>
-   <a href="#contact">CONTACT ME</a>
-   </nav>
- </header>
+    <!-- list for style reasons -->
+    <li>Worked in retail for nearly 4 years.</li>
+    <li>Developed strong social skills with people from many walks of life.</li>
+    <li>Learned to become adaptable and teachable.</li>
+    <li>I strive to lead others to success with me and not behind me.</li>
+    <li>Maintained a very professional work ethic and strive to do better attitude.</li>
+    <li>Learned to handle stressful fast-paced environments and how to structure priorities.</li>
+  </section>
 
- <!-- portrait & buttons  -->
+  <!-- Labels for my images -->
 
- <section class="portrait">
-  <button onclick="document.body.style.backgroundColor = 'rgb(44, 44, 44)';"> Dark</button>
-  <img src="assests/images/mylogo.png" >
-  <button onclick="document.body.style.backgroundColor = '#ffff';"> Light</button>
-  <h2 id="about">a little about me</h2>
+  <section class="descriptions">
+    <a href="https://github.com/Jdogcrane/covid-and-cats" target="_blank">Covid&Cats</a>
+    <a href="https://github.com/Jdogcrane/PasswordGenerator" target="_blank">PasswordGenerator</a>
+    <a href="https://github.com/Jdogcrane" target="_blank">GitHubRepo</a>
+  </section>
 
-  <!-- list for style reasons -->
+  <!-- Images and Id's -->
 
-  <li>This year I turned 22.</li>
-  <li>Oh, also my name is Joshua Crane.</li>
-  <li>Currently studying to become a Full Stack Web Developer.</li>
-  <li>Most of my hobbies involve some type of tech.</li>
-  <li>Currently learning JavaScript.</li>
- </section>
+  <section class="projects">
+    <a href="https://jdogcrane.github.io/covid-and-cats/" target="_blank"><img id="projects" src="assests/images/preview2.gif" alt="project"></a>
+    <a href="https://jdogcrane.github.io/PasswordGenerator/" target="_blank"><img id="mini-project" src="assests/images/preview.gif" alt="mini-project"></a>
+    <a href="https://github.com/Jdogcrane" target="_blank"><img id="activity" src="assests/images/preview3.gif" alt="activity"></a>
+  </section>
 
- <!-- Labels for my images -->
+  <!-- Contact me info and links -->
 
- <section class="descriptions">
-  <label class="repo">Recent Projects</label>
-  <label class="spotify">My Study Music</label>
-  <label class="activity">My activitys</label>
- </section>
-
- <!-- Images and Id's -->
-
- <section class="projects">
-  <img id="projects" src="assests/images/projects.png" alt="projects">
-  <iframe id="spotify" src="https://open.spotify.com/embed/playlist/6XLYjJaLY1wV5BZjqMHNsz" alt="spotify"></iframe>
-  <img id="activity" src="assests/images/activity.png" alt="activity">
- </section>
-
- <!-- Contact me info and links -->
- 
- <address id="contact">
-  <a href="tel:+17043693265">704-369-3265</a>
-  <a href="mailto:Jdogcrane@gmail.com">Email</a>
-  <a href="https://github.com/Jdogcrane">GitHub</a>
-  <a href="https://open.spotify.com/user/jdogcrane">Spotify</a>
- </address>
+  <address id="contact">
+    <a href="tel:+17043693265">704-369-3265</a>
+    <a href="mailto:Jdogcrane@gmail.com">Email</a>
+    <a href="https://github.com/Jdogcrane" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/joshua-crane-911532210/" target="_blank">LinkIn</a>
+    <a href="https://open.spotify.com/user/jdogcrane" target="_blank">Spotify</a>
+  </address>
 </body>
+
 </html>
