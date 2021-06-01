@@ -165,7 +165,7 @@ address a:hover {
     background-color: rgba(66, 66, 66, 0.192);
 }
 
-/* when screen gets small hide labels */
+/* when screen gets small hide these */
 
 @media screen and (max-width: 1000px) {
     .descriptions {
