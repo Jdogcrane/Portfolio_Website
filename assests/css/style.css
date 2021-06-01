@@ -137,9 +137,6 @@ address {
 }
 
 .descriptions a {
-    text-decoration: none;
-    color: black;
-    border: solid black;
     border-radius: 20px;
     margin: 170px;
     max-width: auto;
