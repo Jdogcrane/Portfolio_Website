@@ -1,10 +1,14 @@
 <h1 style="text-align: center;">Portfolio Website</h1>
 
-[[Deployed-Site]](https://jdogcrane.github.io/Portfolio_Website/)
+[[Deployed-Site]](https://jdogcrane.github.io/PortfolioV2/)
 
 [[Site-Preview]](#Site-Preview)
 
 ## General Overview: 
+
+>Notes: NOTICE
+
+This is just an updated version of my old portfolio website
 
 <p style="font-family:georgia"> 
 Today I made a deployable website portfolio. 
@@ -88,7 +92,7 @@ CSS Additions
 * added media styling changes when width is met
 * added button styling
 
->Notes: some of my code was a little sloppy, might have some redundancies, but I didn't mind since the projects goal was not focused on making my code look good.
+>Notes: updated version of my old portfolio website
 
 # Site Preview
-![alt link= https://cdn.discordapp.com/attachments/709148993262977068/842585534051385344/GuYlOJHwbr.gif](assests/images/site.gif)
+![alt link= https://cdn.discordapp.com/attachments/709148993262977068/842585534051385344/GuYlOJHwbr.gif](assests/images/preview.gif)

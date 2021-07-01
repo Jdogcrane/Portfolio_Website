@@ -1,75 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assests/css/style.css" />
-  <title>Portfolio & More</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./assests/css/style.css" />
+  <title>Portfolio</title>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+<!-- Nav/Home -->
 
-<body>
+<body id="home">
+  <div class="navbar-fixed">
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="https://github.com/Jdogcrane" id="home" class="titleBig" target="_blank">Joshua Crane</a>
+          <a href="https://github.com/Jdogcrane" target="_blank" class="titleSmall">Josh</a>
+          <a data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons white-text circle btn-floating center black-text ">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#aboutme">About Me</a>
+            </li>
+            <li>
+              <a class="white-text" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="https://jdogcrane.github.io/Portfolio_Website/assests/resume/resume1.pdf"
+                target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-  <!-- navigation and header title -->
-  <header>
-    <section class="navbar banner">
-      <h2>Joshua Crane</h2>
-      <a href="#">HOME</a>
-      <a href="#about">INFO</a>
-      <a href="#projects">RECENT PROJECTS</a>
-      <a href="#contact">CONTACT ME</a>
-      <a href="./assests/resume/resume1.pdf" target="_blank">RESUME</a>
-      </nav>
-  </header>
+  <!-- Side bar for nav when smaller -->
+  <ul class="sidenav black" id="mobile-nav">
+    <li>
+      <a class="white-text" href="#home">Home</a>
+    </li>
+    <li>
+      <a class="white-text" href="#aboutme">About Me</a>
+    </li>
+    <li>
+      <a class="white-text" href="#projects">Projects</a>
+    </li>
+    <li>
+      <a class="white-text" href="https://jdogcrane.github.io/Portfolio_Website/assests/resume/resume1.pdf">Resume</a>
+    </li>
+    <div class="center">
 
-  <!-- portrait & buttons  -->
+      <a class="waves-effect waves-light btn-floating social github" href="https://github.com/Jdogcrane"
+        target="_blank">
+        <i class="fab fa-github white black-text"></i></a>
 
-  <section class="portrait">
-    <button onclick="document.body.style.backgroundColor = 'rgb(44, 44, 44)', document.body.style.color = '#ffff';">
-      Dark</button>
-    <img src="assests/images/mylogo.png">
-    <button onclick="document.body.style.backgroundColor = '#ffff', document.body.style.color = 'black';">
-      Light</button>
-    <h2 id="about">bio</h2>
+      <a class="waves-effect waves-light btn-floating social github"
+        href="https://www.linkedin.com/in/joshua-crane-911532210/" target="_blank">
+        <i class="fab fa-linkedin white black-text"></i></a>
 
-    <!-- list for style reasons -->
-    <li>Worked in retail for nearly 4 years.</li>
-    <li>Developed strong social skills with people from many walks of life.</li>
-    <li>Learned to become adaptable and teachable.</li>
-    <li>I strive to lead others to success with me and not behind me.</li>
-    <li>Maintained a very professional work ethic and strive to do better attitude.</li>
-    <li>Learned to handle stressful fast-paced environments and how to structure priorities.</li>
-  </section>
+      <a class="waves-effect waves-light btn-floating social github"
+       href="https://www.instagram.com/joshua_crane/" target="_blank">
+        <i class="fab fa-instagram white black-text"></i></a>
 
-  <!-- Labels for my images -->
+      <a class="waves-effect waves-light btn-floating social github"
+        href="https://open.spotify.com/user/jdogcrane?si=ca332a64d48c4b49" target="_blank">
+        <i class="fab fa-spotify white black-text"></i></a>
+    </div>
+  </ul>
 
-  <section class="descriptions">
-    <a href="https://github.com/Jdogcrane/covid-and-cats" target="_blank">Covid&Cats</a>
-    <a href="https://github.com/Jdogcrane/PasswordGenerator" target="_blank">PasswordGenerator</a>
-    <a href="https://github.com/Jdogcrane" target="_blank">GitHubRepo</a>
-  </section>
+  <!-- modified slider section pulled from materialize.com as a basic slider template-->
+  <div class="parallax-container">
+    <div class="parallax"><img src="./assests/images/backdrop.jpg"></div>
+  </div>
+  <div class="container">
+    <div class="container center">
+      <h2 id="aboutme" class="header grey-text text-lighten-2">A little about me</h2>
+    </div>
+    <div class="container center">
+      <img class="me circle" src="./assests/images/me.png" alt="me" href="#aboutme">
+    </div>
+    <div class="center container">
+      <!-- github link button -->
+      <a class="waves-effect waves-light btn-floating social" href="https://github.com/Jdogcrane" target="_blank">
+        <i class="fab fa-github black white-text"></i></a>
+      <!-- linkedin link button -->
+      <a class="waves-effect waves-light btn-floating social" href="https://www.linkedin.com/in/joshua-crane-911532210/"
+        target="_blank">
+        <i class="fab fa-linkedin black white-text"></i></a>
+      <!-- instagram link button -->
+      <a class="waves-effect waves-light btn-floating social " href="https://www.instagram.com/joshua_crane/"
+        target="_blank">
+        <i class="fab fa-instagram black white-text"></i></a>
+      <!-- spotify link button -->
+      <a class="waves-effect waves-light btn-floating social"
+        href="https://open.spotify.com/user/jdogcrane?si=ca332a64d48c4b49" target="_blank">
+        <i class="fab fa-spotify black white-text"></i></a>
+    </div>
+    <div class="container">
+      <!-- bio -->
+      <p class="grey-text text-lighten-2 flow-text">Over my career I have
+        developed strong social skills with people from many walks of life.
+        Learned to become adaptable and teachable.
+        I strive to lead others to success with me and not behind me.
+        Maintained a very professional work ethic and strive to do better attitude.
+        Learned to handle stressful fast-paced environments and how to structure priorities.</p>
+    </div>
+  </div>
+  </div>
 
-  <!-- Images and Id's -->
+  </div>
 
-  <section class="projects">
-    <a href="https://jdogcrane.github.io/covid-and-cats/" target="_blank"><img id="projects"
-        src="assests/images/preview2.gif" alt="project"></a>
-    <a href="https://jdogcrane.github.io/PasswordGenerator/" target="_blank"><img id="mini-project"
-        src="assests/images/preview.gif" alt="mini-project"></a>
-    <a href="https://github.com/Jdogcrane" target="_blank"><img id="activity" src="assests/images/preview3.gif"
-        alt="activity"></a>
-  </section>
+  <div class="section grey-text text-lighten-2">
+    <div class="section grey-text text-lighten-2">
+      <div class="row container center">
 
-  <!-- Contact me info and links -->
+        <h2 id="projects" class="header center">Some things I've done</h2>
+      </div>
+      <div class="row container ">
+        <p class="grey-text text-lighten-2 center">Tip: click on the caption to visit the repo and the image to visit
+          deployed page</p>
 
-  <address id="contact">
-    <a href="tel:+17043693265">704-369-3265</a>
-    <a href="mailto:Jdogcrane@gmail.com">Email</a>
-    <a href="https://github.com/Jdogcrane" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/joshua-crane-911532210/" target="_blank">LinkedIn</a>
-    <a href="https://open.spotify.com/user/jdogcrane" target="_blank">Spotify</a>
-  </address>
+
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <a href="https://jdogcrane.github.io/covid-and-cats/" target="_blank">
+                <img src="./assests/images/covidCats.png"></a> <!-- covidCats image -->
+              <div class="caption center-align">
+                <a href="https://github.com/Jdogcrane/covid-and-cats" target="_blank">
+                  <h3 class="light grey-text text-lighten-3">Covid Cats Repo</h3>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="https://forum-friends.herokuapp.com/" target="_blank">
+                <img src="./assests/images/forumFriends.png"></a> <!-- random image -->
+              <div class="caption center-align">
+                <a href="https://github.com/Jdogcrane/forum-friends" target="_blank">
+                  <h3 class="light grey-text text-lighten-3">Forum Friends Repo</h3>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="https://jdogcrane.github.io/PasswordGenerator/" target="_blank">
+                <img src="./assests/images/passwordGenerator.png"></a> <!-- random image -->
+              <div class="caption center-align">
+                <a href="https://github.com/Jdogcrane/PasswordGenerator" target="_blank">
+                  <h3 class="light grey-text text-lighten-3">Password Generator Repo</h3>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="https://limitless-basin-37434.herokuapp.com/notes" target="_blank">
+                <img src="./assests/images/noteTaker.png"></a> <!-- random image -->
+              <div class="caption center-align">
+                <a href="https://github.com/Jdogcrane/Note-Taker" target="_blank">
+                  <h3 class="light grey-text text-lighten-3">Note Taker Repo</h3>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+<!-- parrallax #2 -->
+      <div class="parallax-container parallax-container2">
+        <div class="parallax"><img src="./assests/images/backdrop2.jpg"></div>
+      </div>
+
+      <!-- footer -->
+      <footer class="section darken-2 white-text center">
+        <h6>&copy;2021</h6>
+      </footer>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./assests/script.js"></script>
 </body>
-
 </html>

@@ -1,188 +1,82 @@
-/* Body & Font */
+.me {
+    max-width: 150px;
+    border: solid 1px black;
+    background: -webkit-linear-gradient(left, #00000085, #700f548e);
+}
 
-body {
+.titleSmall {
+    display: none !important;
+    font-size: x-large;
+}
+
+.titleBig {
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 480px) {
+    .titleBig {
+        display: none !important;
+    }
+    .titleSmall {
+        display: inline-block !important;
+    }
+}
+
+* {
+    scroll-behavior: smooth;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Navigation and Transparency for styling reasons */
-
-.navbar {
-    background: transparent;
-    height: 300px;
-    width: auto;
-    float: center;
+.caption {
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 20px;
+    max-width: 500px;
 }
-
-/* Nav bar anchor font and color */
-
-.navbar a {
-    color: black;
-    text-decoration: none;
-    padding: 20px 20px;
-    float: center;
-    display: block;
-    font-size: 20px;
-    box-sizing: border-box;
-}
-
-/* nav bar hovor state */
-
-.navbar a:hover {
-    background-color: rgba(48, 34, 17, 0.308);
-}
-
-/* Body text alignment & back */
 
 body {
-    text-align: center;
-    margin: 40px;
-    background-blend-mode: soft-light;
-    scroll-behavior: smooth;
-    background-color: #fff;
-    transition: 500ms;
-    color: black;
+    background: -webkit-linear-gradient(left, #fd873f, #710954);
 }
 
-/* image of me with curved edges and shadow*/
-
-.portrait img {
-    margin-top: 20px;
-    height: auto;
-    max-width: 300px;
-    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
-    border-radius: 8px;
+.collapsible {
+    max-width: 200px;
 }
 
-/* look of h2 element */
-
-h2 {
-    margin-top: 0px;
-    padding: 0px;
-    float: center;
-    text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
+.parallax-container {
+    height: 500px;
+    box-shadow: 10px 2px 50px 20px rgba(0, 0, 0, 0.514);
 }
 
-/* settings for look and positioning of banner */
-
-.banner {
-    background-image: url("../images/backround.jpg");
-    min-height: 200px;
-    height: auto;
-    background-position: auto;
-    background-size: cover;
-    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
-    border-radius: 20px;
+.parallax-container2 {
+    height: 400px;
 }
 
-/* settings for look of projects & activitys */
-
-.projects img {
-    float: center;
-    flex: auto;
-    height: auto;
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
-    margin: 0px;
-    border-radius: 8px;
-    border: rgb(0, 0, 0);
-    cursor: pointer;
+.nav {
+    background: -webkit-linear-gradient(left, rgba(71, 38, 18, 0.486), #710954);
 }
 
-.portrait a {
-    text-decoration: none;
-    color: black;
-    border: double black;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: space-around;
+.slider {
+    box-shadow: 10px 2px 50px 20px rgba(0, 0, 0, 0.514);
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: 5px solid black;
 }
 
-/* adds zoom to hover state */
-
-.projects img:hover {
-    transform: scale(1.1);
-    transition: 400ms;
+.indicator-item.active {
+    background-color: grey !important;
 }
 
-p {
-    text-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
+.btn-floating {
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 4px;
+    min-width: 40px;
+    max-height: 100px;
 }
 
-/* removes dots from list */
+.btn-floating:hover {
 
-li {
-    list-style: none
+    background-color: rgba(99, 99, 99, 0.342);
 }
 
-/* adds some space for footer */
-
-footer {
-    margin: 20px;
-}
-
-/* address anchor settings for style */
-
-address {
-    margin: 20px;
-}
-
-.descriptions {
-    margin: 20px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.descriptions a {
-    border-radius: 20px;
-    margin: 170px;
-    max-width: auto;
-    max-height: auto;
-    padding: 5px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-}
-
-address a {
-    text-decoration: none;
-    color: black;
-    border: double black;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* adds hover state to contact info */
-
-address a:hover {
-    background-color: rgba(66, 66, 66, 0.192);
-}
-
-/* when screen gets small hide these */
-
-@media screen and (max-width: 1000px) {
-    .descriptions {
-        visibility: hidden;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #contact address a {
-        text-decoration: none;
-    }
-}
-
-/* button size and look */
-
-button {
-    max-width: 100px;
-    background: rgb(75, 75, 75);
-    margin-bottom: 20px;
-    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.61);
-    color: white;
-    border-radius: 20px;
+.fab:hover {
+    background-color: rgba(126, 126, 126, 0.534) !important;
 }
