@@ -1,6 +1,6 @@
 <h1 style="text-align: center;">Portfolio Website</h1>
 
-[[Deployed-Site]](https://jdogcrane.github.io/Portfolio/)
+[[Deployed-Site]](https://jdogcrane.github.io/Portfolio_Website/)
 
 [[Site-Preview]](#Site-Preview)
 
